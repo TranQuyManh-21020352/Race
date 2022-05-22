@@ -131,7 +131,6 @@ bool checkCollision(std::vector<SDL_Rect>&A, std::vector<SDL_Rect>&B)
 			Right_B = B[Bpix].x + B[Bpix].w;
 			if (((Top_A > Bottom_B) || (Bottom_A < Top_B) || (Right_A < Left_B) || (Left_A > Right_B)) == false)
 			{
-				std::cout << "car: " << Apix << " obs: " << Bpix << std::endl;
 				return true;
 			}
 		}
