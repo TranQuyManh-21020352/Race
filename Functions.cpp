@@ -67,12 +67,13 @@ void setObstacles(std::vector<Obstacles>& Obstacle, SDL_Renderer* screen, int& c
 	}
 }
 
-void renderObs(std::vector<Obstacles>& Obstacle,SDL_Renderer* screen)
+void renderObs(std::vector<Obstacles>& Obstacle,SDL_Renderer* screen, int& Score)
 {
 	for (int obs = 0; obs < Obstacle.size(); obs++)
 	{
 		if (Obstacle[obs].GetPosYObstacles() > SCREEN_HEIGHT + 60)
 		{
+			Score++;
 			int random = rand() % 2;// random color obstacles
 			if (random == 0) {
 				Obstacle[obs].loadImageObstacles("image//obstacles.png", screen);

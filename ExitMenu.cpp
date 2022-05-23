@@ -10,7 +10,12 @@ void ShowExitMenu::setBackGround(SDL_Renderer* screen) {
 
 void ShowExitMenu::setString(int& totalPoint, std::vector<int>hightscore_) {
 	std::string score = std::to_string(totalPoint);
-	if (hightscore_.size() == 1 || totalPoint > hightscore_[1]) {
+	// if hightscore is text = "HightScore" else text = "your point"
+	if ( hightscore_.size() == 1 && hightscore_[0] != 0)  {
+		buttonExit[E_YOUR_POINT] = "Hight Score: " + score;
+		isHightScore = true;
+	}
+	else if (hightscore_.size() > 1 && totalPoint > hightscore_[1]) {
 		buttonExit[E_YOUR_POINT] = "Hight Score: " + score;
 		isHightScore = true;
 	}
@@ -37,6 +42,7 @@ void ShowExitMenu::setText(SDL_Renderer* screen, _TTF_Font* font) {
 }
 
 void ShowExitMenu::setRect() {
+	// set pos for buttons
 	posButtonExit[E_YOUR_POINT] = { (SCREEN_WIDTH - textButtonExit[E_YOUR_POINT].getWidthText()) / 2,SCREEN_HEIGHT / 4, textButtonExit[E_YOUR_POINT].getWidthText(), textButtonExit[E_YOUR_POINT].getHeightText() };
 	posButtonExit[E_PLAY_AGAIN] = { (SCREEN_WIDTH - textButtonExit[E_PLAY_AGAIN].getWidthText()) / 2,SCREEN_HEIGHT / 2 , textButtonExit[E_PLAY_AGAIN].getWidthText(), textButtonExit[E_PLAY_AGAIN].getHeightText() };
 	posButtonExit[E_RETURN_MENU] = { (SCREEN_WIDTH - textButtonExit[E_RETURN_MENU].getWidthText()) / 2,SCREEN_HEIGHT / 2 + 120, textButtonExit[E_RETURN_MENU].getWidthText(), textButtonExit[E_RETURN_MENU].getHeightText() };

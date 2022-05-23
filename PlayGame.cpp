@@ -47,15 +47,15 @@ void runGamePlay(SDL_Renderer* gRenderer, BaseObject& gBackGround, CarObject& gR
 	// set Score by for time run
 	time = (SDL_GetTicks() - 1200) / 1000 - val;
 	valText.str("");
-	valText << "Score: " << time;
+	valText << "Score: " << Score;
 	TextScore = valText.str().c_str();
-	Score = time;
+	//Score = time;
 	gText.setText(TextScore);
 	RunBackground(gBackGround, gRenderer, false);
 	gRedCar.move();
 	setObstacles(gObstacles, gRenderer, currentObstacles, timeAppearObstacles, timeMaxAppearObstacles);
 	gText.loadFromRenderedText(gFont, gRenderer);
-	renderObs(gObstacles, gRenderer);
+	renderObs(gObstacles, gRenderer,Score);
 	gRedCar.CarRender(gRenderer);
 	RenderRectangle(gRenderer, FillColor, FillRect);
 	RenderOutLine(gRenderer, OutlineColor, OutlineRect);

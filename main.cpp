@@ -175,11 +175,13 @@ int main(int argc, char* args[])
 
 			else if (finish == E_RETURN_MENU) { // if press button menu
 				menu = M_MENU;
+				Score = 0;
 				gameOver = false;
 			}
 			else if (finish == E_EXIT) // if press Exit or symbol "X" is right of Window
 			{
 				Game = true;
+				Score = 0;
 				menu = M_EXIT;
 				gameOver = false;
 			}

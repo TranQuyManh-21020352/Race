@@ -2,25 +2,25 @@
   CarObject.cpp
   CommanFunc.cpp
   ExitMenu.cpp
-E:\LẬP TRÌNH NÂNG CAO\Race\ExitMenu.cpp(5,68): warning C4390: ';': empty controlled statement found; is this the intent?
+E:\A.Bài tập lớn\Race\Race\ExitMenu.cpp(5,68): warning C4390: ';': empty controlled statement found; is this the intent?
   ExplosionObject.cpp
   Functions.cpp
   Geomatric.cpp
   HightScore.cpp
-E:\LẬP TRÌNH NÂNG CAO\Race\HightScore.cpp(6,72): warning C4390: ';': empty controlled statement found; is this the intent?
+E:\A.Bài tập lớn\Race\Race\HightScore.cpp(6,72): warning C4390: ';': empty controlled statement found; is this the intent?
   HowToPlay.cpp
-E:\LẬP TRÌNH NÂNG CAO\Race\HowToPlay.cpp(6,71): warning C4390: ';': empty controlled statement found; is this the intent?
+E:\A.Bài tập lớn\Race\Race\HowToPlay.cpp(6,71): warning C4390: ';': empty controlled statement found; is this the intent?
   main.cpp
-E:\LẬP TRÌNH NÂNG CAO\Race\main.cpp(30,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+E:\A.Bài tập lớn\Race\Race\main.cpp(30,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Menu.cpp
-E:\LẬP TRÌNH NÂNG CAO\Race\Menu.cpp(5,64): warning C4390: ';': empty controlled statement found; is this the intent?
+E:\A.Bài tập lớn\Race\Race\Menu.cpp(5,64): warning C4390: ';': empty controlled statement found; is this the intent?
   ObstaclesObject.cpp
   ObstaclesObject.h
   PlayGame.cpp
-E:\LẬP TRÌNH NÂNG CAO\Race\PlayGame.cpp(5,37): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-E:\LẬP TRÌNH NÂNG CAO\Race\PlayGame.cpp(6,38): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+E:\A.Bài tập lớn\Race\Race\PlayGame.cpp(5,37): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+E:\A.Bài tập lớn\Race\Race\PlayGame.cpp(6,38): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
   TextObject.cpp
   TimeObject.cpp
   Generating Code...
 x64\Debug\ObstaclesObject.obj : warning LNK4042: object specified more than once; extras ignored
-  Race.vcxproj -> E:\LẬP TRÌNH NÂNG CAO\Race\x64\Debug\Race.exe
+  Race.vcxproj -> E:\A.Bài tập lớn\Race\Race\x64\Debug\Race.exe
