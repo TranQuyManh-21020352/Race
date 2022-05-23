@@ -17,6 +17,8 @@ BaseObject gBackGround;
 TextObject gText;
 TextObject CountdownText;
 SDL_Color Color = { 255, 0, 255 };
+
+const int upLevel = 30;
 static int timeAppearObstacles ;
 static int timeMaxAppearObstacles ;
 static int currentObstacles = 0;
@@ -149,7 +151,7 @@ int main(int argc, char* args[])
 						SDL_Delay(1000 / FRAME_PER_SECOND - frameticks);
 					}
 					// increase level for game
-					if (Score >= 10 * increase){
+					if (Score >= upLevel * increase){
 						setVelObstacles(gObstacles, 1);
 						increase++;
 					}
