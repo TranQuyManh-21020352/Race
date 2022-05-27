@@ -149,9 +149,9 @@ int ShowExitMenu::showMenuExit(SDL_Renderer* screen, TTF_Font* font, int& totalP
 						//if putdown is play effect sound
 						Mix_HaltChannel(-1);
 						Mix_PlayChannel(-1, gPress, 0);
-						if (k == 1)
+						if (k == E_RETURN_MENU)
 						{
-							SDL_Delay(500);
+							SDL_Delay(300);
 						}
 						else {
 							SDL_Delay(500);
